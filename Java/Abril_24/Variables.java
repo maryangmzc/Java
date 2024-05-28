@@ -2,6 +2,18 @@ package Java.Abril_24;
 
 public class Variables {
     
+    public static void saludar(String nombre, Double hora){
+        String saludo = "";
+            if(hora >8 && hora <12){
+                saludo=saludo.concat("Buenos dias ");
+            }else if(hora < 19){
+                saludo=saludo.concat("Buenas tardes ");
+            }else{
+                saludo=saludo.concat("Buenas noches ");
+            }
+            saludo = saludo.concat(nombre);
+            System.out.println(saludo);
+        }
     /**
      * @param args
      */
@@ -64,5 +76,26 @@ public class Variables {
         System.out.println(greetings.length());
         greetings = greetings.concat("Maryan");
         System.out.println(greetings);
+
+        /*AGREGAR ALGO AL FINAL */
+
+        String ninja = String.format("Hola %s, me debes $%.2f !", "Jack", 25.0);
+System.out.println(ninja);
+
+        /*HAY UNA DIFERENCIA ENTRE LOS OBJETOS */
+        System.out.println("Maryan");
+        System.out.println(new String("Maryan"));
+
+        /*Este guarda la palabra */
+        String a = "Maryan";
+        /*Este guarda el objeto nuevo que se ha creado en el string, otro objeto otra variable */
+        String b = new String("Maryan");
+
+        /*Imprimir inicio staaticc porque esta fuera de main */
+        saludar("Wendy",20.5);
+
+
+        }
+
+
     }
-}
