@@ -1,8 +1,14 @@
 package Java.Abril_25;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
+
+import javax.print.attribute.HashPrintJobAttributeSet;
 
 public class variablesTest {
+    private static final HashMap<Object, Object> String = null;
+
     /**
      * @param args
      */
@@ -106,15 +112,37 @@ public class variablesTest {
                     System.out.println(i);
                 }
 
+                /*imprime los valores hasta que uno sea mayor */
+
                 System.out.println("-------");
                 for(int i=0; i<lotery.length;i++){
                     System.out.println(lotery[i]);
                 }
-
+                /* FOR:EACH para cada numero que esta dentro de chance imprimelo, es bucle optimizado */
                 for(Integer numero : chance){
                     System.out.println(numero);
                 }
 
+                /*HashMap COMO UN DICCIONARIO */
+
+                HashMap<String, String> glosario = new HashMap<String, String>();
+                glosario.put("perro", "Mamífero perteneciente a la familia de lo cánidos");
+                glosario.put("gato", "Mamífero perteneciente a la familia de lo félinos");
+                glosario.put("chinchilla", "Mamífero perteneciente a la familia de lo roedores");
+                glosario.put("alpacas", "Mamífero perteneciente a la familia de lo camélidos");
+
+                System.out.println(glosario);
+
+                System.out.println(glosario.get("chinchilla"));
+
+                /*Extraccion de llaves se acuerda por el nombre como lista de contactos de whatsapp */
+                Set<String> keys = glosario.keySet();
+                System.out.println(keys);
+
+                for(String key : keys) {
+                    System.out.println(key);
+                    System.out.println(glosario.get(key));
+                }
 
 
 

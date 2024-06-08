@@ -2,7 +2,7 @@ package Logica_Negocio_Cafe;
 
 /*import java.util.ArrayList;*/
 
-public class CafeUtil {
+public class CafeUtil2 {
 
     /*PRIMER METODO */
     
