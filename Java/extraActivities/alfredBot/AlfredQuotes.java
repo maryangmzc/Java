@@ -1,5 +1,4 @@
-package Java.Extra_activities.alfredBot;
-@SuppressWarnings("preview")
+package Java.extraActivities.alfredBot;
 
 import java.util.Date;
 
