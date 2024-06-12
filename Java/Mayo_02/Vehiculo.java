@@ -12,6 +12,14 @@ public class Vehiculo {
     private boolean automatico;
     private double cilindraje;
 
+    /*FUNCION PARA ACELERAR UN CARRO, recibe la velocidad objetivo */
+    public void acelerar(int velocidad) {
+        System.out.print("Acelerando a" + velocidad);
+        } else {
+            System.out.println("se quemó el motor");
+        }
+    }
+
     /*CONSTRUCTOR */
     
 
@@ -19,6 +27,13 @@ public class Vehiculo {
 
     public Vehiculo(int pasajeros, int velocidad, int ruedas, int peso, int puertas, String carroceria,
     String categoria, boolean automatico, double cilindraje) {
+
+        if(velocidad<=340){
+            this.velocidad = velocidad;
+        } else {
+            this.velocidad=340;
+        }
+
         this.pasajeros = pasajeros;
         this.velocidad = velocidad;
         this.ruedas = ruedas;
