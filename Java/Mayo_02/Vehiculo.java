@@ -28,12 +28,6 @@ public class Vehiculo {
     public Vehiculo(int pasajeros, int velocidad, int ruedas, int peso, int puertas, String carroceria,
     String categoria, boolean automatico, double cilindraje) {
 
-        if(velocidad<=340){
-            this.velocidad = velocidad;
-        } else {
-            this.velocidad=340;
-        }
-
         this.pasajeros = pasajeros;
         this.velocidad = velocidad;
         this.ruedas = ruedas;
@@ -62,7 +56,11 @@ public class Vehiculo {
     }
 
     public void setVelocidad(int velocidad) {
-        this.velocidad = velocidad;
+        if(velocidad<=340){
+            this.velocidad = velocidad;
+        } else {
+            this.velocidad=340;
+        }
     }
 
     public int getRuedas() {
